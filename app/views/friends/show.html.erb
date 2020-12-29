@@ -1,0 +1,38 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+  </h1>
+  <hr class="my-4">
+  <p class="lead">
+    <%= @friend.email %> |
+    <%= @friend.phone %> |
+    <%= @friend.twitter %>
+  </p>
+  <br/>
+  <p class="lead">
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> &nbsp
+    <%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
+  </p>
+</div>
+
+<style>
+  .jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
+
+  .lead{
+    font-weight: 400;
+  }
+
+  .display-4{
+    font-weight: 400;
+  }
+</style>
+
+
+
