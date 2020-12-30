@@ -5,6 +5,7 @@ require "rails/all"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+#Bundler.require(:test, :development)
 
 module Friends
   class Application < Rails::Application
@@ -20,4 +21,4 @@ module Friends
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
-config.assets.initialize_on_precompile = false
+#config.assets.initialize_on_precompile = false

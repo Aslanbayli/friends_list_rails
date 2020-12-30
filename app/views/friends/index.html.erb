@@ -7,7 +7,7 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Twitter</th>
-        <th>User id</th>
+        <%# <th>User id</th> %>
         <th>Tools</th>
       </tr>
     </thead>
@@ -24,7 +24,7 @@
             <td><%= friend.email %></td>
             <td><%= friend.phone %></td>
             <td><%= friend.twitter %></td>
-            <td><%= friend.user_id %></td>
+            <%#= friend.user_id %>
             <%#= link_to 'Show', friend, class:'link1' %>
             <%#= link_to 'Edit', edit_friend_path(friend), class:'link1' %>
             <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' }, class:'link1', class:"btn btn-outline-danger btn-sm" %></td> 
