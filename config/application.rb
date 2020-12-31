@@ -11,7 +11,7 @@ module Friends
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-
+    config.assets.initialize_on_precompile = false
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -21,4 +21,5 @@ module Friends
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
-#config.assets.initialize_on_precompile = false
+
+
